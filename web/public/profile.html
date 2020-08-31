@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | UNIQUORUM</title>
+    <link rel="icon" type="image/png" href="/web/assets/img/Uniquorum_icon.png" />
+    <link rel="stylesheet" href="/web/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/web/assets/css/main.css">
+    <link rel="stylesheet" href="/web/assets/css/index.css">
+    <link rel="stylesheet" href="/web/assets/css/profile.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="menu">
+            <a href="index.html"><img src="/web/assets/img/Uniquorum_hz_logo.png" alt="Logo site" /></a>
+            <nav>
+                <ul>
+                    <li><a href="/web/public/index.html">Home</a></li>
+                    <li><a href="/web/public/categories.html">Categorias</a></li>
+                    <li><a href="/web/public/about.html">Sobre</a></li>
+                    <li id="login-item"><a href="/web/public/login.html">Login</a></li>
+                    <li id="profile-item"><a class="active" href="/web/public/profile.html">Profile</a></li>
+                    <li id="management-item"><a href="/web/public/management.html">Gerenciamento</a></li>
+                    <li id="logout-item">
+                        <a href="/web/public/index.html">
+                            Logout
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li> <!-- DARK MODE -->
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                      </label>
+                    </li>
+                    <li>
+                        <button class="font-size-btn" id="decrease-font-btn">a-</button>
+                        <button class="font-size-btn" id="normalize-font-btn">A</button>
+                        <button class="font-size-btn" id="increase-font-btn">A+</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="profile">
+            <div class="form">
+                <h1>Informações</h1>
+                <form>
+                    <div class="vertical-line"></div>
+                    <div class="input-container">
+                        <input type="text" name="name" id="name" placeholder="Nome Completo" autocomplete="off" required />
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="username" id="username" placeholder="Usuário" autocomplete="off" required />
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required />
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="registry" id="registry" placeholder="Matrícula" readonly autocomplete="off" required />
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" id="phone" placeholder="Telefone" autocomplete="off" required />
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="course" id="course" placeholder="Curso" autocomplete="off" required />
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="semester" id="semester" placeholder="Semestre" autocomplete="off" required />
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="submit" name="submit" id="update" value="Salvar alterações" />
+                    </div>
+                </form>
+            </div>
+            <div class="form">
+                <form>
+                    <h1>Trocar senha</h1>
+                    <div class="input-container">
+                        <input type="password" name="password" id="password" placeholder="Nova senha" required autocomplete="off" />
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <i id="eye-icon" class="fa fa-eye eye-icon" aria-hidden="true" onclick="togglePassword('eye-icon')"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="repeat-password" id="repeat-password" placeholder="Confirmar senha" required autocomplete="off" />
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <i id="eye-icon-repeat" class="fa fa-eye eye-icon" aria-hidden="true" onclick="togglePassword('eye-icon-repeat')"></i>
+                    </div>
+                    <div class="input-container">
+                        <input type="submit" name="submit" value="Atualizar senha" />
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="/web/assets/js/main.js"></script>
+    <script src="/web/assets/js/profile.js"></script>
+</body>
+</html>

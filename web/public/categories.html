@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias | UNIQUORUM</title>
+    <link rel="icon" type="image/png" href="/web/assets/img/Uniquorum_icon.png" />
+    <link rel="stylesheet" href="/web/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/web/assets/css/main.css">
+    <link rel="stylesheet" href="/web/assets/css/index.css">
+    <script src="/web/assets/js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="menu">
+            <a href="/web/public/index.html"><img src="/web/assets/img/Uniquorum_hz_logo.png" alt="Logo site" /></a>
+            <nav>
+                <ul>
+                    <li><a href="/web/public/index.html">Home</a></li>
+                    <li><a class="active" href="/web/public/categories.html">Categorias</a></li>
+                    <li><a href="/web/public/about.html">Sobre</a></li>
+                    <li id="login-item"><a href="/web/public/login.html">Login</a></li>
+                    <li id="profile-item"><a href="/web/public/profile.html">Profile</a></li>
+                    <li id="management-item"><a href="/web/public/management.html">Gerenciamento</a></li>
+                    <li id="logout-item">
+                        <a href="/web/public/index.html">
+                            Logout
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li> <!-- DARK MODE -->
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                      </label>
+                    </li>
+                    <li>
+                        <button class="font-size-btn" id="decrease-font-btn">a-</button>
+                        <button class="font-size-btn" id="normalize-font-btn">A</button>
+                        <button class="font-size-btn" id="increase-font-btn">A+</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-content" id="cardscrollbar">
+            <div class="grid main-categories grid-categories-page-fix grid-mgm">
+                <div class="path category">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <div class="links">
+                        <a href="/web/public/index.html">Página Inicial</a>
+                        <span>/</span>
+                        <a href="#">Categorias</a>
+                    </div>
+                </div>
+                <header>
+                    <h1>Categorias</h1>
+                    <ul>
+                        <li>Tópicos</li>
+                        <li>Posts</li>
+                        <li>Last post</li>
+                    </ul>
+                </header>
+                <!-- <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="/web/public/category.html" class="title">Informações</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Cadeiras</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Matrícula</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Calendário</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Estudo</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Secretaria</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Eventos</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Cursos</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">SIGAA</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </div>
+    <script src="/web/assets/js/main.js"></script>
+    <script src="/web/assets/js/categories.js"></script>
+</body>
+</html>

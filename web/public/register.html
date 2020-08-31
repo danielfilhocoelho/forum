@@ -3,56 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNIQUORUM - Cadastro</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/register.css" />
+    <title>Cadastrar-se | UNIQUORUM</title>
+    <link rel="icon" type="image/png" href="/web/assets/img/Uniquorum_icon.png" />
+    <link rel="stylesheet" href="/web/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/web/assets/css/main.css" />
+    <link rel="stylesheet" href="/web/assets/css/register.css" />
 </head>
 <body>
     <section class="form-section">
-        <div class="form card">
-            <img src="../assets/img/Uniquorum_vt_logo.png" />
-            <!-- <h2>Cadastro</h2> -->
+        <div class="form register card">
+            <h1>Cadastrar-se</h1>
+            <img src="/web/assets/img/Uniquorum_vt_logo.png" alt="Logo" />
             <form>
                 <div class="input-container">
-                    <input type="text" name="username" id="username" required />
-                    <span>Usuário</span>
+                    <input type="text" name="name" id="name" oninput="hideWarningMessage('div-name')" placeholder="Nome Completo" autocomplete="off" />
                     <i class="fa fa-user" aria-hidden="true"></i>
                 </div>
+                <div id="div-name" class="div-message-error">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span></span>
+                </div>
                 <div class="input-container">
-                    <input type="password" name="password" id="password" required />
-                    <span>Senha</span>
+                    <input type="text" name="username" id="username" oninput="hideWarningMessage('div-username')" placeholder="Usuário" autocomplete="off" />
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div id="div-username" class="div-message-error">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span></span>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="password" id="password" oninput="hideWarningMessage('div-password')" placeholder="Senha" autocomplete="off" />
                     <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                 </div>
-                <div class="input-container">
-                    <input type="text" name="email" id="email" required />
-                    <span>Email</span>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                <div id="div-password" class="div-message-error">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span></span>
                 </div>
                 <div class="input-container">
-                    <input type="tel" name="phone" id="phone" required />
-                    <span>Telefone</span>
+                    <input type="text" name="email" id="email" oninput="hideWarningMessage('div-email')" placeholder="Email" autocomplete="off" />
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div id="div-email" class="div-message-error">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span></span>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="registry" id="registry" oninput="hideWarningMessage('div-registry')" placeholder="Matrícula" autocomplete="off" />
+                    <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                </div>
+                <div id="div-registry" class="div-message-error">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span></span>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" id="phone" oninput="hideWarningMessage('div-phone')" placeholder="Telefone" autocomplete="off" />
                     <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <div id="div-phone" class="div-message-error">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span></span>
                 </div>
                 <div class="input-group">
                     <div class="input-container">
-                        <input type="text" name="course" id="course" required />
-                        <span>Curso</span>
+                        <input type="text" name="course" id="course" placeholder="Curso" autocomplete="off" />
                         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     </div>
                     <div class="input-container">
-                        <input type="number" name="semester" id="semester" max="20" required />
-                        <span>Semestre</span>
+                        <input type="number" name="semester" id="semester" max="20" placeholder="Semestre" autocomplete="off" />
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                     </div>
                 </div>
+                <div id="div-input-group" class="div-message-error">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <span></span>
+                </div>
                 <div class="input-container">
-                    <input type="submit" name="submit" value="Criar conta" />
+                    <input id="register-button" type="submit" name="submit" value="Criar conta" />
                 </div>
             </form>
-            <!-- <a href="#" id="forget-password">Esqueceu a senha?</span>
-            <a href="#" id="register">Cadastre-se.</span> -->
+            <a href="/web/public/login.html" id="back-to-login">Login.</a>
+            <a href="/web/public/index.html" id="home">Página Inicial.</a>
         </div>
     </section>
+    <script src="/web/assets/js/main.js"></script>
+    <script src="/web/assets/js/register.js"></script>
 </body>
 </html>

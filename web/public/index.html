@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIQUORUM | Fórum para estudantes da Universidade Federal do Ceará</title>
+    <link rel="icon" type="image/png" href="/web/assets/img/Uniquorum_icon.png" />
+    <link rel="stylesheet" href="/web/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/web/assets/css/main.css">
+    <link rel="stylesheet" href="/web/assets/css/post.css">
+    <link rel="stylesheet" href="/web/assets/css/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="menu">
+            <a href="#"><img id="logo" src="/web/assets/img/Uniquorum_hz_logo.png" alt="Logo site" /></a>
+            <nav>
+                <ul>
+                    <li><a id="home-menu" class="active" href="#">Home</a></li>
+                    <li><a href="/web/public/categories.html">Categorias</a></li>
+                    <li><a href="/web/public/about.html">Sobre</a></li>
+                    <li id="login-item"><a href="/web/public/login.html">Login</a></li>
+                    <li id="profile-item"><a href="/web/public/profile.html">Profile</a></li>
+                    <li id="management-item"><a href="/web/public/management.html">Gerenciamento</a></li>
+                    <li id="logout-item">
+                        <a href="/web/public/index.html">
+                            Logout
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li> <!-- DARK MODE -->
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                      </label>
+                    </li>
+                    <li>
+                        <button class="font-size-btn" id="decrease-font-btn">a-</button>
+                        <button class="font-size-btn" id="normalize-font-btn">A</button>
+                        <button class="font-size-btn" id="increase-font-btn">A+</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-content" id="cardscrollbar">
+            <!-- <div class="grid main-categories">
+                <div id="reply-container" class="reply-container reply-container-home">
+                    <input id="title-input" class="title-input" type="text" placeholder="Digite o título aqui" autocomplete="off" />
+                    <div class="icons">
+                        <i class="fa fa-bold" aria-hidden="true"></i>
+                        <i class="fa fa-italic" aria-hidden="true"></i>
+                        <i class="fa fa-underline" aria-hidden="true"></i>
+                        <i class="fa fa-font" aria-hidden="true"></i>
+                        <i class="fa fa-eraser" aria-hidden="true"></i>
+                    </div>
+                    <textarea name="reply-answer" id="reply-answer" class="reply-home" placeholder="Deixe sua mensagem aqui"></textarea>
+                    <div class="buttons">
+                        <a id="reply-button">Postar <i class="fa fa-location-arrow" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <header>
+                    <a href="/web/public/categories.html">Principais categorias</a>
+                    <ul>
+                        <li>Tópicos</li>
+                        <li>Posts</li>
+                        <li>Last post</li>
+                    </ul>
+                </header>
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="/web/public/category.html" class="title">Informações</a>
+                            <p class="description">Informações gerais sobre o fórum.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Tutorial</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Cadeiras</a>
+                            <p class="description">Informações gerais sobre cadeiras ou disciplinas.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Disciplinas</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Matrícula</a>
+                            <p class="description">Preciso me matricular mas o sigaa caiu.</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Matrícula</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Calendário</a>
+                            <p class="description">Quando vai ter o próximo feriadão?</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Calendário letivo</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Estudo</a>
+                            <p class="description">Alguém tem o pdf do livro?</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Livro-texto</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <div class="info">
+                            <a href="#" class="title">Secretaria</a>
+                            <p class="description">Como faço para pegar meu histórico?</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="last-post">
+                                <a href="#">Cindy</a>
+                                <p>by <span>Admin</span></p>
+                                <span>08 de Agosto de 2020, 09:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid last-posts">
+                <header>
+                    <h1>Últimos posts</h1>
+                    <ul>
+                        <li>Visitas</li>
+                        <li>Comentários</li>
+                        <li>Autor</li>
+                    </ul>
+                </header>
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <a href="/web/public/post.html" class="title">Bem vindo ao Uniquroum</a>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="author">
+                                <a href="#">Noleto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <a href="#" class="title">Fórum Desenvolvimento Web</a>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="author">
+                                <a href="#">Thalisson</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <a href="#" class="title">Qual o cardápio de hoje no RU?</a>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="author">
+                                <a href="#">Felipe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <a href="#" class="title">Quando é a prova de economia?</a>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="author">
+                                <a href="#">Ícaro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <a href="#" class="title">A prova do professor Marques é de dupla?</a>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="author">
+                                <a href="#">Daniel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-side">
+                        <div class="icon"></div>
+                        <a href="#" class="title">Tradução para o inglês do meu artigo.</a>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="number">2</li>
+                            <li class="number">10</li>
+                            <li class="author">
+                                <a href="#">Milton</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <header class="trending-heading">Mais Acessados</header>
+                <div class = "trending__item">
+                    <a href="#">Mecânica dos sólidos</a>
+                    <p class = "trending-info">Alguém me ensina francês?</p>
+                    <p>by <span>Ícaro</span></p>
+                    <span class = "trending-date">12 de Setembro de 2019, 13:30</span>
+                    <hr>
+                </div>
+                <div class = "trending__item">
+                    <a href="#">Física quântica</a>
+                    <p class = "trending-info">Bichano de Schrödinger</p>
+                    <p>by <span>Felipe</span></p>
+                    <span class = "trending-date">12 de Setembro de 2010, 13:30</span>
+                    <hr>
+                </div>
+                <div class = "trending__item">
+                    <a href="#">Trabalho</a>
+                    <p class = "trending-info">galera, sobre o trabalho...</p>
+                    <p>by <span>Daniel</span></p>
+                    <span class = "trending-date">12 de Setembro de 2010, 13:30</span>
+                    <hr>
+                </div>
+                <a id="reply-top" href="#title-input" class="new-topic-container">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    TÓPICO
+                </a>
+            </div> -->
+        </section>
+    </div>
+    <script src="/web/assets/js/main.js"></script>
+    <script src="/web/assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIQUORUM | Fórum para estudantes da Universidade Federal do Ceará</title>
+    <link rel="icon" type="image/png" href="/web/assets/img/Uniquorum_icon.png" />
+    <link rel="stylesheet" href="/web/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/web/assets/css/main.css">
+    <link rel="stylesheet" href="/web/assets/css/index.css">
+    <link rel="stylesheet" href="/web/assets/css/post.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="menu">
+            <a href="/web/public/index.html"><img src="/web/assets/img/Uniquorum_hz_logo.png" alt="Logo site" /></a>
+            <nav>
+                <ul>
+                    <li><a href="/web/public/index.html">Home</a></li>
+                    <li><a href="/web/public/categories.html">Categorias</a></li>
+                    <li><a href="/web/public/about.html">Sobre</a></li>
+                    <li id="login-item"><a href="/web/public/login.html">Login</a></li>
+                    <li id="profile-item"><a href="/web/public/profile.html">Profile</a></li>
+                    <li id="management-item"><a href="/web/public/management.html">Gerenciamento</a></li>
+                    <li id="logout-item">
+                        <a href="/web/public/index.html">
+                            Logout
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li> <!-- DARK MODE -->
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                      </label>
+                    </li>
+                    <li>
+                        <button class="font-size-btn" id="decrease-font-btn">a-</button>
+                        <button class="font-size-btn" id="normalize-font-btn">A</button>
+                        <button class="font-size-btn" id="increase-font-btn">A+</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-content grid-mgm" id="cardscrollbar">
+            <!-- <div class="header">
+                <div class="path">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <div class="links">
+                        <a href="/web/public/index.html">Página Inicial</a>
+                        <span>/</span>
+                        <a href="/web/public/categories.html">Categorias</a>
+                        <span>/</span>
+                        <a href="/web/public/category.html">Informações</a>
+                    </div>
+                </div>
+                <h1>Bem vindo ao Uniquorum</h1>
+                <div class="buttons">
+                    <a id="reply-top" href="#reply-container">Responder <i class="fa fa-reply" aria-hidden="true"></i></a>
+                    <div class="search-container">
+                        <input type="text" placeholder="Procure aqui">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="container">
+                <div class="post">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <h1>Bem vindo ao Uniquorum</h1>
+                    <span>08 de Agosto de 2020, 14:55</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reiciendis sapiente et expedita, voluptate hic non repellat a totam incidunt.
+                        Sint debitis repudiandae aperiam temporibus, fuga nulla beatae quaerat similique?</p>
+                </div>
+                <div class="user-info">
+                    <span>Admin</span>
+                    <p class="posts">Total de posts: <span>24</span></p>
+                    <p class="joined">Entrou: <span>01 de Agosto de 2020, 15:00</span></p>
+                </div>
+            </div> -->
+
+            <!-- <div class="container">
+                <div class="post">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <h1>Re: Bem vindo ao Uniquorum</h1>
+                    <span>08 de Agosto de 2020, 14:55</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reiciendis sapiente et expedita, voluptate hic non repellat a totam incidunt.
+                        Sint debitis repudiandae aperiam temporibus, fuga nulla beatae quaerat similique?</p>
+                </div>
+                <div class="user-info">
+                    <span>Felipe</span>
+                    <p class="posts">Total de posts: <span>24</span></p>
+                    <p class="joined">Entrou: <span>01 de Agosto de 2020, 15:00</span></p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="post">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <h1>Re: Bem vindo ao Uniquorum</h1>
+                    <span>08 de Agosto de 2020, 14:55</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reiciendis sapiente et expedita, voluptate hic non repellat a totam incidunt.
+                        Sint debitis repudiandae aperiam temporibus, fuga nulla beatae quaerat similique?</p>
+                </div>
+                <div class="user-info">
+                    <span>Ícaro</span>
+                    <p class="posts">Total de posts: <span>24</span></p>
+                    <p class="joined">Entrou: <span>01 de Agosto de 2020, 15:00</span></p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="post">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    <h1>Re: Bem vindo ao Uniquorum</h1>
+                    <span>08 de Agosto de 2020, 14:55</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reiciendis sapiente et expedita, voluptate hic non repellat a totam incidunt.
+                       Sint debitis repudiandae aperiam temporibus, fuga nulla beatae quaerat similique?
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reiciendis sapiente et expedita, voluptate hic non repellat a totam incidunt.
+                       Sint debitis repudiandae aperiam temporibus, fuga nulla beatae quaerat similique?</p>
+                </div>
+                <div class="user-info">
+                    <span>Daniel</span>
+                    <p class="posts">Total de posts: <span>24</span></p>
+                    <p class="joined">Entrou: <span>01 de Agosto de 2020, 15:00</span></p>
+                </div>
+            </div>
+
+            <div id="reply-container" class="reply-container">
+                <div class="icons">
+                    <i class="fa fa-bold" aria-hidden="true"></i>
+                    <i class="fa fa-italic" aria-hidden="true"></i>
+                    <i class="fa fa-underline" aria-hidden="true"></i>
+                    <i class="fa fa-font" aria-hidden="true"></i>
+                    <i class="fa fa-eraser" aria-hidden="true"></i>
+                </div>
+                <textarea name="reply-answer" id="reply-answer" placeholder="Deixe sua mensagem aqui"></textarea>
+                <div class="buttons">
+                    <a id="reply-button">Responder <i class="fa fa-reply" aria-hidden="true"></i></a>
+                </div>
+            </div> -->
+        </section>
+    </div>
+    <script src="/web/assets/js/main.js"></script>
+    <script src="/web/assets/js/post.js"></script>
+</body>
+</html>
