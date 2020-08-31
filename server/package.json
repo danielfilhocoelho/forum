@@ -4,15 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "lint": "./node_modules/.bin/eslint ./"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "./node_modules/.bin/eslint ./ --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "husky": "^4.2.5",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.28",
+    "nodemailer": "^6.4.11"
   },
   "devDependencies": {
     "eslint": "^7.6.0",

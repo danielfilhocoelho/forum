@@ -6,5 +6,17 @@ module.exports = {
     },
     getAPIPort: function () {
         return config.API && config.API.port ? config.API.port : 3000;
+    },
+    getJwtSecret: function () {
+        return config.API.jwt.secret;
+    },
+    getJwtExpires: function () {
+        return config.API.jwt.expires;
+    },
+    getEmail: function () {
+        return config.API.mail.email;
+    },
+    getPassword: function () {
+        return config.API.mail.password;
     }
 };
